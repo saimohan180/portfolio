@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cybersecurity portfolio with interactive case studies and smooth animations." />
+    <title>Bhanu | Cybersecurity Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <canvas id="hexCanvas" class="hex-canvas" aria-hidden="true"></canvas>
+
+    <header class="header" id="top">
+      <a href="#top" class="brand" aria-label="Bhanu home">
+        <span class="brand-dot"></span>
+        Bhanu
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#trainings">Trainings</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section reveal" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="kicker">Cybersecurity Portfolio</p>
+          <h1 id="hero-title">Ravipati Venkata Sai Mohan Kumar Bhanu</h1>
+          <p class="hero-copy">
+            Cybersecurity-focused Computer Science student with hands-on experience in ethical hacking, Linux administration, and malware defense solutions.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View Case Files</a>
+            <a class="btn btn-ghost" href="#contact">Start Collaboration</a>
+          </div>
+
+          <div class="stats-grid" aria-label="Highlight stats">
+            <article class="stat-card">
+              <h3 class="stat-number" data-count="1">0</h3>
+              <p>Major Security Project</p>
+            </article>
+            <article class="stat-card">
+              <h3 class="stat-number" data-count="2">0</h3>
+              <p>Professional Trainings</p>
+            </article>
+            <article class="stat-card">
+              <h3 class="stat-number" data-count="3">0</h3>
+              <p>Industry Certifications</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="terminal-card" aria-label="Live command preview">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+            <p>bhanu@security-shell</p>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> <span id="typed-command"></span><span class="caret">|</span></p>
+            <div id="command-output" class="terminal-output" aria-live="polite"></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="about section reveal" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>
+          I am currently pursuing B.Tech in Computer Science and Engineering at Lovely Professional University, Punjab (since August 2023). My focus area is cybersecurity, with practical exposure to penetration testing, digital forensics, and Linux system operations.
+        </p>
+      </section>
+
+      <section class="skills section reveal" id="skills" aria-labelledby="skills-title">
+        <div class="section-head">
+          <h2 id="skills-title">Capabilities</h2>
+          <p>Technical skills aligned with my CV and training experience.</p>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card" data-tilt>
+            <h3>Programming Languages</h3>
+            <p>C, Python, HTML, CSS</p>
+            <div class="meter"><span style="--value: 84%"></span></div>
+          </article>
+          <article class="skill-card" data-tilt>
+            <h3>Cybersecurity Tools</h3>
+            <p>Wireshark, Nmap, Burp Suite, Metasploit, TryHackMe</p>
+            <div class="meter"><span style="--value: 86%"></span></div>
+          </article>
+          <article class="skill-card" data-tilt>
+            <h3>Operating Systems</h3>
+            <p>Linux and Windows Administration</p>
+            <div class="meter"><span style="--value: 82%"></span></div>
+          </article>
+          <article class="skill-card" data-tilt>
+            <h3>Network and Security</h3>
+            <p>Vulnerability Assessment, Penetration Testing, Digital Forensics</p>
+            <div class="meter"><span style="--value: 88%"></span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section reveal" id="projects" aria-labelledby="projects-title">
+        <div class="section-head">
+          <h2 id="projects-title">Case Files</h2>
+          <p>Featured project from my CV (Oct 2024 - Apr 2025).</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="case-id">CASE ID WS-001</p>
+            <h3>Anti-malware Extension</h3>
+            <p>Built a browser extension to detect and block malware-infected files (URLs, images, and PDFs) using AI-powered analysis and signature-based detection.</p>
+            <ul>
+              <li>Status: Completed</li>
+              <li>Focus: Malware Detection and Prevention</li>
+              <li>Highlights: Real-time scanning, proactive warning pop-ups, modular architecture for future threat modules</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="trainings" aria-labelledby="trainings-title">
+        <div class="section-head">
+          <h2 id="trainings-title">Trainings</h2>
+          <p>Industry-focused hands-on programs.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="case-id">JUN 2025 - JUL 2025</p>
+            <h3>Linux System Administration | Lovely Professional University</h3>
+            <ul>
+              <li>Completed Red Hat Linux administration training (RH124 and RH134).</li>
+              <li>Worked on user management, file systems, permissions, networking, and services.</li>
+              <li>Configured virtual machines and networks using Apache CloudStack.</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <p class="case-id">APR 2024</p>
+            <h3>Ethical Hacking Training | Rising Tech Pro</h3>
+            <ul>
+              <li>Covered footprinting, scanning, enumeration, exploitation, and post-exploitation.</li>
+              <li>Hands-on use of Nmap, Burp Suite, Wireshark, and Metasploit.</li>
+              <li>Strengthened defensive strategy and incident response understanding.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="certifications" aria-labelledby="certifications-title">
+        <div class="section-head">
+          <h2 id="certifications-title">Certifications</h2>
+          <p>Current certifications from recognized organizations.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>CompTIA Security+</h3>
+            <p>CompTIA | Since Aug 2025</p>
+          </article>
+          <article class="project-card">
+            <h3>Quick Heal DFIR</h3>
+            <p>Quick Heal | Since Aug 2025</p>
+          </article>
+          <article class="project-card">
+            <h3>CompTIA Network+</h3>
+            <p>CompTIA | Since Aug 2025</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="education" aria-labelledby="education-title">
+        <div class="section-head">
+          <h2 id="education-title">Education</h2>
+          <p>Academic background from CV.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Lovely Professional University, Punjab</h3>
+            <p>Computer Science and Engineering | Since Aug 2023</p>
+            <p>Location: Jalandhar, Punjab</p>
+          </article>
+          <article class="project-card">
+            <h3>Balaji Junior College</h3>
+            <p>12th with Science | Apr 2021 - Mar 2023</p>
+            <p>Percentage: 93.00% | Rajahmundry, Andhra Pradesh</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section reveal" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Access Channel</h2>
+        <p>Reach me directly through email, phone, LinkedIn, or GitHub.</p>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Email</h3>
+            <p><a href="mailto:kumarbhanuravipati25@gmail.com">kumarbhanuravipati25@gmail.com</a></p>
+          </article>
+          <article class="project-card">
+            <h3>Phone</h3>
+            <p><a href="tel:+919392748966">+91 9392748966</a></p>
+          </article>
+          <article class="project-card">
+            <h3>LinkedIn</h3>
+            <p><a href="https://linkedin.com/in/kumarbhanuravipati5315" target="_blank" rel="noreferrer">linkedin.com/in/kumarbhanuravipati5315</a></p>
+          </article>
+          <article class="project-card">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/saimohan180" target="_blank" rel="noreferrer">github.com/saimohan180</a></p>
+          </article>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Transmit Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Ravipati Venkata Sai Mohan Kumar Bhanu. Built for GitHub Pages.</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
